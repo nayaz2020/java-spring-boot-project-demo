@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/parts :: meta">
+  <meta charset="UTF-8">
+  <title> Login Page</title>
+
+</head>
+
+<header th:replace="fragments/parts :: head"> </header>
+
+<body class="summary">
+<div class="container">
+
+  <div class="container-form">
+    <h3> Logout page </h3><br>
+    <h4> You are about to logout ? </h4>
+    <form class="form-control-lg" th:action="@{/logout}"   >
+      <a href="/login" class="nav-link-logout" onclick="document.getElementById('login').submit();">Logout</a>
+
+
+    </form>
+  </div>
+
+  <footer th:replace="fragments/parts :: footer"> </footer>
+
+
+</div>
+</body>
+</html>

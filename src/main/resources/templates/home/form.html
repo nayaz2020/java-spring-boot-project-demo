@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/parts :: meta">
+    <meta charset="UTF-8">
+    <title> Summary Page</title>
+
+</head>
+
+<header th:replace="fragments/parts :: head"> </header>
+
+<body class="summary">
+<div class="container">
+
+<div class="container-form">
+  <h3> Resume Data Form </h3><br>
+
+    <form class="form-control-lg" th:action="@{/resume/form}" th:object="${newData}" method="post">
+
+        <div class="form-group">
+            <label></label>
+            <input class="form-control" type="hidden"  name="Id" th:field="*{id}">
+        </div>
+
+        <div class="form-group">
+            <div>
+            <label for="activity"> ACTIVITY</label>
+            <input type="text" class="form-control" id="activity" name="activity"  placeholder="Enter Activity"
+            th:field="*{activity}">
+            </div><br>
+
+            <label for="graduate_yes"> Graduated </label>
+
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="graduate_yes" name="graduate_yes" class="custom-control-input" value="yes" th:field="*{graduated}">
+            <label class="custom-control-label" for="graduate_yes">yes</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="graduated_no" name="graduated_no" class="custom-control-input" value="No" th:field="*{graduated}">
+            <label class="custom-control-label" for="graduated_no">No</label>
+        </div>
+
+            <div>
+                <label for="subject"> SUBJECT </label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter subject"
+                th:field="*{subject}">
+            </div><br>
+
+            <div>
+                <label for="level"> LEVEL</label>
+
+                <select class="form-select form-select-lg "  id = "level" th:field="*{level}">
+                    <option th:value="'Select...'" >Pleas Select one...</option>
+                    <option th:value="'Basic'" th:text="Basic"></option>
+                    <option th:value="'Intermediate'" th:text="Intermediate"></option>
+                    <option th:value="'Advance'" th:text="Advance"></option>
+                </select>
+
+            </div><br>
+
+            <div>
+            <label for="year"> YEAR </label>
+            <input type="text" class="form-control" id="year" name="year" placeholder="Enter year"
+            th:field="*{years}"><br>
+            </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+    </form>
+</div>
+
+    <footer th:replace="fragments/parts :: footer"> </footer>
+
+
+</div>
+</body>
+</html>

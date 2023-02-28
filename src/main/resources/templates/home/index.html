@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/parts :: meta">
+    <title> Portfolio Page </title>
+</head>
+<header th:replace="fragments/parts :: head"> </header>
+
+<body>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h1 class="margin">About me</h1>
+    <img src="/images/myPic.png" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250">
+    <p class = "about-text" ><STRONG>BIO :  </STRONG>
+        I am an experienced Administrative Assistant turning to Software Development.<br>
+        I am currently pursuing bachelor’s in software development with intend<br> to graduate
+        in Winter 2022. I enjoy using my skills to contribute to the exciting <br>technological
+        advances happens everyday around us. I am currently open for an internship <br> program for
+        a ground where I can improve my skills furthermore <br>while contributing my skills. <p>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2">
+    <div class="row">
+        <div class="col-sm-4 text-center">
+            <span class="border-top-3 border-warning">
+                <div>
+                    <h3>Contact</h3>
+                    <p>Email: nematullah.ayaz@gmail.com<br>
+                    mobile: 206-555-5555<br>
+                    Linkedin: Nematullah Akhundzada<br>
+                    Github: nematu<br></p>
+                </div>
+            <hr>
+                <div>
+                    <h3>Education</h3>
+                    <p>Green River College<br>
+                    Bachelor in Software Development</p>
+                    <p>Franco-Afghan High School<br>
+                        Higher Secondary Education</p>
+                </div>
+                <hr>
+
+                <div>
+                    <h3>Learning Skills</h3>
+                       <p>
+                           Full Stack Web Development<br>
+                           Object-Oriented Programming "JAVA"<br>
+                           Data Structures<br>
+                           Algorithms<br>
+                           Payton Basics<br>
+                           Database Fundamentals<br>
+                           Agile Development Methods<br>
+                           IT, Network Security basics
+                       </p>
+                </div>
+            </span>
+        </div>
+
+        <div class="col-sm-8">
+                <div>
+                    <h2>Working Experiences</h2>
+                    <h3>Administrative Assistant</h3>
+                    <p> Maintained Director and Deputy Director Calendars for meetings and special events.<br>
+                    Processed time-cards of employees in (Win-TA and Web-TA) systems.<br>
+                    Maintained filling system organized and up to date (hard and soft files)
+                    tracking inventory of stationery,<br> maintenance and transportation request in E-Services
+                    Process travel clearance requests for<br> R&R and RRB leaves and TDYs<br>
+                    </p>
+                </div><br>
+
+                <div>
+                    <h3> Juvenile Justice Assistant</h3>
+                    <h3> Terre Des Hommes Child  Right Consortium </h3>
+                    <p> Support Juvenile Justice Coordinator in legal and administrative tasks and program flow.<br>
+                        Organizing workshops, trainings and Liaoning  with partners<br>
+                        Maintained filling system organized and up to date (hard and soft files)<br>
+                        tracking inventory of stationaries, maintenance and transportation request in E-Services<br>
+                        Process travel clearance requests for R&R and RRB leaves and TDYs<br>
+                    </p>
+
+                </div><br>
+
+
+                <div>
+                    <h4>Hobbies</h4>
+                    <p>
+                        Washing Movies<br>
+                        Walk with Friends <br>
+                        Doing Fine Arts<br>
+                    </p>
+                </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid bg-1 text-center">
+    <div class="row">
+
+            <h4> Part of class work, I developed bellow website, which demonstrates basic web skills</h4><br>
+            <a href="http://gator.greenriverdev.com" ><img class = "img-responsive " style="display:inline" src="/images/kentOutReach.png" alt="kent-out-reach" ></a>
+
+    </div>
+</div>
+
+
+<footer th:replace="fragments/parts :: footer"> </footer>
+
+</body>
+</html>

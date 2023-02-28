@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="meta">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Social Media style-->
+
+    <!-- inserted its dependency on maven -->
+    <link rel="stylesheet" href="/webjars/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!--script src="/webjars/bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script-->
+</head>
+<body>
+<header th:fragment="head">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Nematullah Ayaz</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home/logout.html"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/resume">Home</a></li>
+                    <li><a href="/resume/summary">Summary</a></li>
+                    <!--li><a href="/resume/summary/individual">Individual-Element</a></li-->
+                    <li><a href="/resume/form"> Form </a></li>
+                    <li><a href="/resume/userform"> Register </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<footer class="panel-footer" th:fragment="footer">
+
+    <!-- Footer -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class = "social-menu">
+                        <p></p>
+                        <ul>
+                            <li><a href="https://github.com/nayaz2020"><i class="fa fa-github-square"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/nematullah-akhundzada-a3aab19b"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a href="https://twitter.com/NematullahAyaz"><i class="fa fa-twitter-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 float:right">
+                    <h3 class="location">Location</h3>
+                    <p class="location">Greater Seattle Area<br>
+                        Washington State
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+</footer>
+
+</body>
+</html>

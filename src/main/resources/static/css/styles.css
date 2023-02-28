@@ -1,0 +1,130 @@
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #2f2f2f;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+    background-color: mediumaquamarine; /* Green */
+    color: #ffffff;
+  }
+/*main body*/
+  .bg-2 {
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+
+  .container-fluid {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .col-sm-8{
+    padding-left: 5%;
+  }
+
+  .navbar {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+    color: #66cdaa !important;
+  }
+
+/*Social Media*/
+.social {
+  width: 50px;
+  height:40px;
+}
+
+.social-menu ul{
+  display: flex;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 10px 15px 0;
+}
+  .social-menu ul li .fa {
+    font-size: 35px;
+    line-height: 60px;
+    transition: .6s;
+    color: #66cdaa;
+  }
+  .social-menu ul li .fa:hover {
+    color: #ffffff;
+  }
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow:0 5px 4px rgba(0,0,0,.3);
+  }
+  .social-menu ul li a:hover {
+    transform: translate(0,-10px);
+  }
+  .social-menu ul li:nth-child(1) a:hover{
+    background-color: #66cdaa;
+  }
+  .social-menu ul li:nth-child(2) a:hover{
+    background-color: #66cdaa;
+  }
+  .social-menu ul li:nth-child(3) a:hover{
+    background-color: #66cdaa;
+  }
+.col-sm{
+  color: #2f2f2f;
+}
+
+/* footer*/
+.contact{
+  padding-left: 100px;
+}
+.location{
+  margin-left: 50%;
+}
+#resume-name{
+  padding-left: 10px;
+}
+.return{
+
+}
+#resume-content{
+  background: #66cdaa;
+  color: black;
+}
+#reference{
+  padding-left: 20px;
+}
+.summary{
+  background: mediumaquamarine;
+}
+.panel-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+.container-form{
+  padding: 50px 15%;
+  background-color: antiquewhite;
+}
+.admin-body{
+  background-color: burlywood;
+  padding: 20px;
+}
+.env{
+  background-color: aliceblue;
+  padding-left: 5px;
+}
+

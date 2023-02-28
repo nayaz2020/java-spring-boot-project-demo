@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/parts :: meta">
+    <meta charset="UTF-8">
+    <title> Individual Element Page</title>
+</head>
+
+<header th:replace="fragments/parts :: head"> </header>
+
+<body class="summary">
+
+
+<div class="container">
+    <h1> Individual Element Page </h1><br>
+    <table class="table table-dark table-striped" >
+        <thead>
+        <tr>
+            <th> ID </th>
+            <th> ACTIVITY </th>
+            <th> GRADUATED </th>
+            <th> LEVEL </th>
+            <th> SUBJECT </th>
+            <th> YEAR </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="item : ${activity}">
+            <td th:text="${activity.id}"></td>
+            <td th:text="${activity.activity}"></td>
+            <td th:if="${activity.graduated == 'HighSchool'or activity.activity=='Associates' or activity.activity=='Bachelor'}"
+                th:text="${activity.graduated}"></td>
+            <td th:unless="${activity.activity == 'HighSchool'or activity.activity=='Associates' or activity.activity=='Bachelor'}" >N/A</td>            <td th:text="${activity.level}"></td>
+            <td th:text="${activity.subject}"></td>
+            <td th:text="${activity.years}"></td>
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<footer th:replace="fragments/parts :: footer"> </footer>
+
+</body>
+</html>

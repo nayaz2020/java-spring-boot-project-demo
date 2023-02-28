@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title> Api Consumer Page</title>
+    <script src="/JS/admin.js"></script>
+</head>
+<header th:replace="fragments/part2 :: head"> </header>
+
+
+<body class="summary">
+    <div class="container">
+        <h1> Admin Page </h1>
+        <div class="admin-body">
+            <div class="env">
+            <h3> Environment information </h3>
+            </div>
+            <div>
+                <h4>Access on Port #: <span id="port"> </span> </h4>
+                <h4> Url: <span id="url"></span></h4>
+            </div>
+
+            <div class="env">
+                <h3> Application Health "User Defined"</h3>
+            </div>
+            <div>
+                <h4> name: <span id="name"></span></h4>
+                <h4> description: <span id="description"></span></h4>
+                <h4> version: <span id="version"></span></h4>
+                <h4> author: <span id="author"></span></h4>
+                <h4> database: <span id="database"></span></h4>
+
+            </div>
+        </div>
+
+    </div>
+
+<footer th:replace="fragments/part2 :: footer"> </footer>
+
+</body>
+</html>

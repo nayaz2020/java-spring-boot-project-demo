@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/parts :: meta">
+    <meta charset="UTF-8">
+    <title> Registration page </title>
+
+</head>
+
+<header th:replace="fragments/parts :: head"> </header>
+<body class="summary">
+<div class="container">
+        <!--th:object="${newUser}"-->
+        <form class="form-control-lg" th:action="@{/resume/userform}"  method="post">
+            <div class="container bg-warning "  ><br>
+
+
+                <fieldset class="form-group border p-3">
+
+                    <div class="form-group col-md-12">
+                        <h2>Register</h2>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="fname">First Name:</label>
+                            <input class="form-control" id="fname" name="fname">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="lname">Last Name:</label>
+                            <input class="form-control" id="lname" name="lname">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="username">Username:</label>
+                            <input class="form-control" id="username" name="username">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="password">Password:</label>
+                            <input class="form-control" id="password" name="password">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="email">Email </label>
+                            <input class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="zip">Zipcode: </label> <br>
+                            <input class="form-control" id="zip" name="Zip">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group col-md-12">
+                        <label for="comment">Comment</label>
+                        <textarea class="form-control " rows="8"  id="comment" name="comment"> </textarea><br>
+                      <div>
+                          <input type="checkbox" id="agreement"  name = "agreement" >
+                          <label for="agreement"> &nbsp; I agree to the term of agreements
+                          </label>
+                      </div>
+
+                        <div class="text-right">
+                            <button type="submit" class="btn btn-success border "> Submit </button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+
+    <footer th:replace="fragments/parts :: footer"> </footer>
+
+</body>
+</html>
